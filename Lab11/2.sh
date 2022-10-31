@@ -11,7 +11,7 @@ function check_error_input() {
 function compile {
     local file=$1
     local output
-    output=$(./compile.sh $file 2>&1)
+    output=$(./compile.sh $file 2>&1) & 
     process_id=$!
     wait ${process_id}
     echo ${output}

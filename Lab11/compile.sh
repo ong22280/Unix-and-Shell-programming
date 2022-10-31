@@ -18,7 +18,7 @@ else
     if [[ $timeout_status -eq 124 ]]; then
         echo 3
     else
-        diff /tmp/output.txt $output > /dev/null
+        diff -b /tmp/output.txt $output > /dev/null
         if [ $? -eq 0 ]; then
             rm /tmp/output.txt
             echo 0
