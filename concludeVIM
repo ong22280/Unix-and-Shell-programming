@@ -1,0 +1,77 @@
+name: Sittipong Hemloun, No: 6410401183
+
+Vim - vi Improved Editor
+
+In my opinion, this editor is very useful for editing programs and other plain text files.
+All commands are given with normal keyboard character, so those who can type with ten fingers can work very fast.
+
+Modes in Vim
+	Command mode - ant key pressed is considered a command
+	Text mode - any key pressed is considered a text input
+
+Command
+1.add
+	i - Inserts text before the current charactor
+	I - Inserts text at the beginning of the current line
+	a - Appends text after the current character
+	A - Appends text at the end of  the current line
+	o - Opens an empty text line for new text after the current line
+	O - Opens a new line above the current line
+2.undo&redo
+	u - undo
+	U - restore (undo) last changed line
+	Ctrl + r - redo
+3.save/exit
+	:w - write (save) the file, but don't exit
+	:wq or :x or ZZ - write (save) and quit
+	:q - quit (fails if there are unsaved changes)
+	:q! or ZQ - quit and throw away unsaved changes
+4.cursor move
+	h - move cursor left
+	j - move cursor down
+	k - move cursor up
+	l - move cursor right
+	w - jump forwards to the start of a word
+	e - jump forwards to the end of a word
+	b - jump backwards to the start of a word
+	% - move to matching character (default supported pairs: '()', '{}', '[]' - use :h matchpairs in vim for more info)
+	0 - jump to the start of the line
+	$ - jump to the end of the line
+	^ - jump to the first non-blank character of the line
+	H - move to top of screen
+	M - move to middle of screen
+	L - move to bottom of screen
+	gg - go to the first line of the document
+	G - go to the last line of the document
+	5gg or 5G - go to line 5
+5.delete & join
+	x - delete (cut) character
+	dd - delete (cut) a line
+	2dd - delete (cut) 2 lines
+6.scorll
+	Ctrl + y - move screen up one line (without moving cursor)
+	Ctrl + e - move screen down one line (without moving cursor)
+	Ctrl + u - move back 1/2 a screen
+	Ctrl + d - move forward 1/2 a screen
+	Ctrl + b - move back one full screen
+	Ctrl + f - move forward one full screen
+7.changing & replacing
+	r - replace a single character
+	R - replace more than one character, until ESC is pressed.
+	cc - change (replace) entire line
+	c$ or C - change (replace) to the end of the line
+	cw or ce - change (replace) to the end of the word
+8.searching
+	/pattern - search for pattern
+	?pattern - search backward for pattern
+		n - repeat search in same direction
+		N - repeat search in opposite direction
+9.cut & paste
+	v - start visual mode, mark lines, then do a command (like y-yank)
+	V - start linewise visual mode
+	Ctrl + v - start visual block mode
+	y - yank (copy) marked text
+	p - put (paste) the clipboard after cursor
+	P - put (paste) before cursor
+
+:sav[eas] file - save file as
